@@ -1,13 +1,18 @@
+#ifndef FIXED_HPP
+#define FIXED_HPP
 
 class Fixed
 {
 private:
-	int fixedNumber;
-	static const int fract;
+	int _fixedNumber;
+	static const int _fract = 8;
 public:
-	Fixed(/* args */);
-	Fixed(const Fixed&);
+	Fixed();
+	Fixed(const Fixed& copy);
 	~Fixed();
-	Fixed &operator=(const Fixed&);
+	Fixed &operator=(const Fixed& src);
+	int getRawBits( void ) const;
+	void setRawBits( int const raw );
 };
 
+#endif
