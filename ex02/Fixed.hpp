@@ -28,6 +28,10 @@ public:
 	Fixed	operator-(const Fixed& rhs) const;
 	Fixed	operator*(const Fixed& rhs) const;
 	Fixed	operator/(const Fixed& rhs) const;
+	Fixed	&operator++();
+	Fixed	&operator--();
+	Fixed	operator++(int);
+	Fixed	operator--(int);
 	// *** Member functions ***
 	int		getRawBits( void ) const;
 	void	setRawBits( int const raw );
