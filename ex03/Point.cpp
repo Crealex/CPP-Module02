@@ -23,7 +23,7 @@ Point::~Point()
 
 }
 
-Point &Point::operator=(const Point& rhs)
+Point &Point::operator=(const Point&)
 {
 	return (*this);
 }

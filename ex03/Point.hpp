@@ -18,14 +18,7 @@ public:
 	Fixed getY() const;
 };
 
-Point::Point(/* args */)
-{
-}
-
-Point::~Point()
-{
-}
-
+bool bsp(const Point a, const Point b, const Point c, const Point point);
 
 #endif
 

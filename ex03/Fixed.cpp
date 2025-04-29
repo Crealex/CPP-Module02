@@ -30,7 +30,7 @@ Fixed::Fixed(const Fixed &copy)
 
 Fixed::~Fixed()
 {
-	std::cout << "Destructor called" << std::endl;
+	//std::cout << "Destructor called" << std::endl;
 }
 
 // ***** Overload operator *****
